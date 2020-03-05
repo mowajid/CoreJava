@@ -1,0 +1,33 @@
+package StringLogicalCording;
+
+public class SubSetOfString {
+
+	public static void main(String[] args) {
+
+		String str = "ABC";
+
+		int len = str.length();
+
+		int count = 0;
+
+		String arr[] = new String[len * (len + 1) / 2];
+
+		for (int i = 0; i < len; i++) {
+
+			for (int j = i; j < len; j++) {
+
+				arr[count] = str.substring(i, j + 1);
+
+				count++;
+
+			}
+		}
+
+		System.out.println("sub set of string");
+		for (int i = 0; i < arr.length; i++) {
+
+			System.out.println(arr[i]);
+		}
+
+	}
+}
