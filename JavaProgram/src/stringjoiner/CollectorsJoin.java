@@ -11,6 +11,8 @@ public class CollectorsJoin {
 		List<String> list = Arrays.asList("AA", "BB", "CC");
 		String str=list.stream().collect(Collectors.joining(","));
 		System.out.println(str);
+                System.out.println(list);
+
 
 	}
 }
